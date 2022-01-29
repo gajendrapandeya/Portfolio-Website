@@ -5,7 +5,8 @@ html {
 :root {
     --color-primary: #121315;
     --color-secondary: #202024;
-    --color-accent: #5428CE;
+    --color-accent: #5529CE;
+    --color-dark-accent: #4622aa;
     --color-headings: #E5E2E3;
     --color-nav-item:#B7B6B9;
 }
@@ -71,9 +72,52 @@ p {
 }
 
 .icon--white {
-    fill: white;
+    filter: invert(100%) sepia(6%) saturate(4%) hue-rotate(1deg) brightness(116%) contrast(100%);
 }
 
 .icon--accent {
-    fill: var(--color-accent);
+    filter: invert(15%) sepia(100%) saturate(3712%) hue-rotate(255deg) brightness(85%) contrast(96%);
+}
+
+/*Buttons*/
+.button {
+    background: var(--color-accent);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 5rem;
+    justify-content: space-around;
+    margin: 1.6rem;
+    outline: none;
+    padding: 0;
+}
+
+.button:hover {
+    background: var(--color-dark-accent);
+}
+
+.button:active {
+    background: #3d1d95;
+}
+
+.button__text, .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0, 2.4rem;
+    color: white;
+    height: 100%;
+}
+
+.button__text {
+   margin: 0 16px;
+   margin-left: 6rem;
+   margin-right: 2rem;
+}
+
+.button__icon {
+    font-size: 2.4rem;
+    margin-left: 2rem;
 }
