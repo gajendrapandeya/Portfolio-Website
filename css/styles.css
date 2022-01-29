@@ -63,3 +63,17 @@ p {
     display: inline-block;
     margin-right: 2rem;
 }
+
+/*Icons*/
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--white {
+    fill: white;
+}
+
+.icon--accent {
+    fill: var(--color-accent);
+}
