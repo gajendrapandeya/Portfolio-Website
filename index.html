@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfoli Website Built Using Html, Css and Javascript.">
+    <meta property="og:title" content="Codermonks">
+    <meta property="og:description" content="Selft taught mobile app developer, learning about web development.">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="imageurl">
+    <meta property="og:url" content="gpandeya.com.np">
     <title>Gajendra Pandeya - Mobile App Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +22,44 @@
 </head>
 
 <body>
-  
+    <!--Navigation-->
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__heading" href="/">
+                <p>Portfolio</p>
+            </a>
+            <img class="icon icon--white nav__toggler" src="/icons/menu.svg">
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">About Me</a></li>
+                <li class="nav__item"><a href="#">Projects</a></li>
+                <li class="nav__item"><a href="#">Services</a></li>
+                <li class="nav__item"><a href="#">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+                <h1 data-aos="fade-right" class="block__heading">
+                    Cloud Hosting for Pros
+                </h1>
+                <p class="hero__tagline">
+                    Deploy your websites in less than 60 seconds.
+                </p>
+                <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+            </header>
+            <picture data-aos="zoom-in">
+                <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+                <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+                <img class="hero__image" src="images/banner.png" alt="" />
+            </picture>
+        </div>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 
