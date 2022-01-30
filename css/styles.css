@@ -5,7 +5,7 @@ html {
 :root {
     --color-primary: #121315;
     --color-secondary: #202024;
-    --color-accent: 
+    --color-accent: #5529CE;
     --color-dark-accent: #4622aa;
     --color-headings: #E5E2E3;
     --color-nav-item:#B7B6B9;
@@ -22,9 +22,6 @@ body {
     font-size: 2.4rem;
 }
 
-/* a {
-    text-decoration: none;
-} */
 
 h2, h3 {
     color: var(--color-headings);
@@ -88,53 +85,53 @@ p {
 }
 
 /*Buttons*/
+
+
+
 .button {
     background: var(--color-accent);
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    display: inline-flex;
-    font-size: 1.6rem;
+    display: flex;
+    font-size: 1.8rem;
     font-weight: 500;
-    height: 5rem;
-    margin: 1.6rem;
+    height: 50px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     outline: none;
+    justify-content: center;
+    overflow: hidden;
     padding: 0;
-}
+  }
 
-.button:hover {
-    background: var(--color-dark-accent);
-}
+  .button:hover {
+      background:var(--color-dark-accent);
+    }
+    
+    .button:active {
+        background: #2c156a;
+    }
 
-.button:active {
-    background: #3d1d95;
-}
 
-.button__text, .button__icon {
+    .btn--block {
+        width: 100%;
+    }
+    
+  
+  .button__text,
+  .button__icon {
     display: inline-flex;
     align-items: center;
-    padding: 0, 2.4rem;
-    color: white;
+    padding: 0 24px;
+    color: #fff;
     height: 100%;
-}
+  }
 
-.button__text {
-   margin: 0 16px;
-   margin-left: 6rem;
-   margin-right: 2rem;
-}
-
-.button__icon {
-    font-size: 2.4rem;
-    margin-left: 2rem;
-}
-
-.button-block {
-    width: 100%;
-    text-decoration: none;
-    display: inline-block;
-}
-
+  .button__icon {
+    font-size: 1.5em;
+    margin-left:1rem;
+  }
 
 /* Collapsibles */
 .collapsible__header {
@@ -184,31 +181,44 @@ p {
     margin-top: 0;
   }
   
+  .block--light--dark {
+    background: var(--color-secondary);
+    color: #7b858b;
+  }
+
   .block--dark {
-    background: #000;
+    background: var(--color-primary);
     color: #7b858b;
   }
   
-  .block--dark h1,
   .block--dark h2,
   .block--dark h3 {
     color: #fff;
   }
-  
-  .block--skewed-right {
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-  }
-  
-  .block--skewed-left {
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  }
+
   
   .container {
     max-width: 1140px;
     margin: 0 auto;
   }
+
+  /*Grids*/
+  .grid {
+    display: grid;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid--1x2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .grid--1x3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
 
   /* Navigation Bar */
   .nav {
@@ -290,28 +300,96 @@ p {
 
   /*Hero Section */
 
-  .hero__tagline {
-    font-size: 2rem;
-    color: #b9c3cf;
-    letter-spacing: 1px;
-    margin: 2rem 0 5rem;
+  .hero__heading {
+      margin-bottom: 0;
+      font-size: 2.8rem;
+      margin-top: 0;
+      color: var(--color-headings);
+  }
+
+  .hero__message {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      color: var(--color-nav-item);
+  }
+
+  .hero__profession {
+      white-space: nowrap;
+      font-size: 2rem;
+      color: var(--color-headings);
+      font-weight: 600;
   }
   
   .hero__image {
     width: 100%;
   }
+
   
   @media screen and (min-width: 768px) {
-    .hero {
-      padding-top: 0;
-    }
   
     .hero__content {
       text-align: left;
       align-self: center;
     }
+
+    .hero__image {
+        justify-self: end;
+        margin-top: 2rem;
+        marker-start: 2rem
+        ;
+    }
   }
-  
+
+  /*About Section*/
+
+  .about__image {
+      max-width: 0;
+      opacity: 0;
+  }
+
+  .about__heading {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    margin-top: -6rem;
+  }
+
+  .about__message {
+      color: var(--color-headings);
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      text-align: left;
+      letter-spacing: 0.8px;
+  }
+
+  @media screen and (min-width: 768px) {
+      .about__image {
+          max-width: 100%;
+          opacity: 1;
+          margin-top: 2rem;
+      }
+
+      .about__heading {
+          margin-top: 1rem;
+      }
+
+      .btn-container {
+          display: inline-flex;
+          gap: 10px;
+      }
+
+      .about__content {
+        text-align: left;
+        align-self: center;
+        margin-left: 10rem;
+      }
+
+      .button {
+          width: auto;
+      }
+  }
   
   
   
