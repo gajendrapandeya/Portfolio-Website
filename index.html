@@ -30,7 +30,7 @@
             </a>
             <img class="icon icon--white nav__toggler" src="/icons/menu.svg">
             <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="#">About Me</a></li>
+                <li class="nav__item"><a href="#about-me" onclick="test('about-me'); return false;">About Me</a></li>
                 <li class="nav__item"><a href="#">Projects</a></li>
                 <li class="nav__item"><a href="#">Services</a></li>
                 <li class="nav__item"><a href="#">Skills</a></li>
@@ -53,7 +53,7 @@
     </section>
 
     <!--About Me Section-->
-    <section class="block block--light--dark about">
+    <section class="block block--light--dark about" id="about-me">
         <div class="container grid grid--1x2">
 
             <div data-aos="zoom-in">
@@ -71,21 +71,126 @@
                     android apps. Currently I'm working at Cocolabs Solutions as a mobile app developer. </p>
 
                 <div class="btn-container">
-                    <button type="button" class="button btn--block">
-                        <span class="button__icon">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </span>
-                        <span class="button__text">Linkedin</span>
-                    </button>
-                    <button type="button" class="button  btn--block">
-                        <span class="button__icon">
-                            <ion-icon name="cloud-download-outline"></ion-icon>
-                        </span>
-                        <span class="button__text">Resume</span>
-                    </button>
+                    <a href="https://www.linkedin.com/in/gajendra-pandeya-91704a175/" target="_" class="">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </span>
+                            <span class="button__title">Linkedin</span>
+                        </button>
+                    </a>
+                    <a href="/resume/GAJENDRA PANDEYa.pdf" download class="">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </span>
+                            <span class="button__title">Resume</span>
+                        </button>
+                    </a>
                 </div>
             </header>
         </div>
+    </section>
+
+    <!--Projects Section-->
+    <section class="block block--dark project" id="projects">
+        <h2 class="project__heading">Projects</h2>
+        <div class="container card-container">
+
+            <div class="card">
+                <div class="card__content">
+                    <p class="card__heading"> Memory King</p>
+                    <p class="card__description">Memory King is a customizable memory game, 100% free. Play one of
+                        the
+                        pre-defined games, or play a custom game created by you or a friend! You can create your own
+                        memory
+                        game
+                        by choosing photos from your phone.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.codermonkeys.mymemory" target="_"
+                        class="">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="logo-google-playstore"></ion-icon>
+                            </span>
+                            <span class="button__title">Playstore</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card grid-col-span-2">
+                <div class="card__content">
+                    <p class="card__heading"> Trackie</p>
+                    <p class="card__description">This app helps people to keep track of a healthy lifestyle by engaging
+                        them in physical activities. The app simply has an option to keep track of your run i.e. how
+                        long users have run, how much calories users have burnt, what is the average speed of the run
+                        and so on. Whenever a user starts his/her run, the app starts tracking user location in the map
+                        view and starts drawing Polylines on the map. Not only this, the app provides the user to have a
+                        look at the statistics of his/her runs. User’s total runs are stored in a database which they
+                        can observe later.</p>
+                    <a href="https://github.com/gajendrapandeya/Trackie" target="_">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </span>
+                            <span class="button__title">Github</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <p class="card__heading"> Animall</p>
+                    <p class="card__description">The very first E-Commerce app for buying Aquarium Products, Animals and
+                        Animals related stuffs. The project is still under development.</p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <p class="card__heading"> Covid-19 Tracker</p>
+                    <p class="card__description">
+                        Get the latest news and stats about the rapidly growing Covid-19 through out the world with ease
+                        with the help of this app.
+                    </p>
+                    <a href="https://github.com/gajendrapandeya/Covid-19" target="_">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </span>
+                            <span class="button__title">Github</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <p class="card__heading">Dogs </p>
+                    <p class="card__description">
+                        This is a complete demo app made using Kotlin and Modern Jetpack Components. The app simply
+                        provides the list of dog fetched from the endPoint. It uses Retrofit for Network Operation and
+                        Room for caching. User have full controll to add the caching time i.e. the data will be fetched
+                        from endpoint based on the refreshTime set by the user. The app also have swipeTorefresh
+                        functionality.
+                    </p>
+                    <a href="https://github.com/gajendrapandeya/Dogs" target="_">
+                        <button class="button">
+                            <span class="button__image">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </span>
+                            <span class="button__title">Github</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <a href="https://github.com/gajendrapandeya?tab=repositories" target="_blank">
+            <p class="project__repositories">Repositories on Github</p>
+        </a>
     </section>
 
 

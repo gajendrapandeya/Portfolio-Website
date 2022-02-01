@@ -40,6 +40,11 @@ p {
     margin-top: 0;
 }
 
+
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
@@ -87,23 +92,34 @@ p {
 /*Buttons*/
 
 
-
 .button {
-    background: var(--color-accent);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    font-size: 1.8rem;
-    font-weight: 500;
-    height: 50px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    outline: none;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-  }
+  border: none;
+  display: flex;
+  align-content: center;
+  background:#5529CE;
+  justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.4rem 2rem;
+}
+
+.button > button:hover {
+  background: none;
+}
+
+.button__title {
+  font-size: 2rem;
+  color: white;
+  align-self: center;
+  margin-left: 2rem;
+}
+
+.button__image {
+  font-size: 30px;
+  color: white;
+  margin-top: 0.6rem;
+}
 
   .button:hover {
       background:var(--color-dark-accent);
@@ -119,19 +135,40 @@ p {
     }
     
   
-  .button__text,
-  .button__icon {
-    display: inline-flex;
-    align-items: center;
-    padding: 0 24px;
-    color: #fff;
-    height: 100%;
-  }
+    /*Cards*/
 
-  .button__icon {
-    font-size: 1.5em;
-    margin-left:1rem;
-  }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+
+    .card {
+      border-radius: 7px;
+      /* box-shadow: 0 0 20px 10px var(--color-nav-item); */
+      background-color: var(--color-secondary);
+    }
+
+    .card__content {
+      padding: 2rem 2rem;
+    }
+
+    .card__heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--color-headings);
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .card__description {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-headings);
+      margin-bottom: 0;
+      margin-top: 16px;
+      margin-bottom: 30px;
+    }
 
 /* Collapsibles */
 .collapsible__header {
@@ -206,7 +243,8 @@ p {
   .grid {
     display: grid;
   }
-  
+
+
   @media screen and (min-width: 768px) {
     .grid--1x2 {
       grid-template-columns: repeat(2, 1fr);
@@ -226,7 +264,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem 1rem;
+    padding: 1.2rem 1rem;
     align-items: center;
   }
 
@@ -342,6 +380,10 @@ p {
 
   /*About Section*/
 
+  #about-me {
+    transition: 2s all ease;
+  }
+
   .about__image {
       max-width: 0;
       opacity: 0;
@@ -353,6 +395,7 @@ p {
     margin-bottom: 1.5rem;
     font-weight: 400;
     margin-top: -6rem;
+    text-align: center;
   }
 
   .about__message {
@@ -364,6 +407,18 @@ p {
       letter-spacing: 0.8px;
   }
 
+  @media screen and (min-width: 500px) {
+    .btn-container {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5rem ;
+  }
+
+  .button {
+    justify-content: space-evenly;
+ }
+  }
+
   @media screen and (min-width: 768px) {
       .about__image {
           max-width: 100%;
@@ -373,11 +428,12 @@ p {
 
       .about__heading {
           margin-top: 1rem;
+          text-align: st;
       }
 
       .btn-container {
-          display: inline-flex;
-          gap: 10px;
+          display: flex;
+          justify-content: space-between;
       }
 
       .about__content {
@@ -387,10 +443,63 @@ p {
       }
 
       .button {
-          width: auto;
+         justify-content: space-evenly;
       }
   }
+
+  /*Projects Section*/
+  .project__heading {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    margin-top: -2rem;
+    text-align: center;
+  }
+
+  .project__repositories {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-accent);
+  }
   
+  @media screen and (min-width: 500px) {
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    }
+
+    .project__heading {
+      margin-top: 1rem;
+    }
+  }
+
+  @media  screen and (min-width: 768px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      }
+
+     .card__content {
+       display: flex;
+       flex-direction: column;
+     }
+
+   .card__content a:last-child {
+     width: 80%;
+     align-self: center;
+     text-align: end;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     padding-left: 6px;
+     padding-right: 6rem;
+     }
+
+  }
   
   
 

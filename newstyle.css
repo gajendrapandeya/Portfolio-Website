@@ -1,0 +1,32 @@
+
+html {
+    font-size: 62.5%;
+}
+
+.button {
+    border: none;
+    display: flex;
+    align-content: center;
+    background:#5529CE;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 0.4rem 2rem;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+  
+  .button__title {
+    font-size: 2rem;
+    color: white;
+    align-self: center;
+    margin-left: 2rem;
+  }
+  
+  .button__image {
+    font-size: 30px;
+    color: white;
+    margin-top: 0.6rem;
+  }
