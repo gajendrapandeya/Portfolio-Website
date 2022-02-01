@@ -31,7 +31,7 @@
             <img class="icon icon--white nav__toggler" src="/icons/menu.svg">
             <ul class="list nav__list collapsible__content">
                 <li class="nav__item"><a href="#about-me" onclick="test('about-me'); return false;">About Me</a></li>
-                <li class="nav__item"><a href="#">Projects</a></li>
+                <li class="nav__item"><a href="#projects">Projects</a></li>
                 <li class="nav__item"><a href="#">Services</a></li>
                 <li class="nav__item"><a href="#">Skills</a></li>
             </ul>
@@ -124,10 +124,7 @@
                     <p class="card__description">This app helps people to keep track of a healthy lifestyle by engaging
                         them in physical activities. The app simply has an option to keep track of your run i.e. how
                         long users have run, how much calories users have burnt, what is the average speed of the run
-                        and so on. Whenever a user starts his/her run, the app starts tracking user location in the map
-                        view and starts drawing Polylines on the map. Not only this, the app provides the user to have a
-                        look at the statistics of his/her runs. User’s total runs are stored in a database which they
-                        can observe later.</p>
+                        and so on...</p>
                     <a href="https://github.com/gajendrapandeya/Trackie" target="_">
                         <button class="button">
                             <span class="button__image">
@@ -172,8 +169,7 @@
                     <p class="card__description">
                         This is a complete demo app made using Kotlin and Modern Jetpack Components. The app simply
                         provides the list of dog fetched from the endPoint. It uses Retrofit for Network Operation and
-                        Room for caching. User have full controll to add the caching time i.e. the data will be fetched
-                        from endpoint based on the refreshTime set by the user. The app also have swipeTorefresh
+                        Room for caching. The app also have swipeTorefresh
                         functionality.
                     </p>
                     <a href="https://github.com/gajendrapandeya/Dogs" target="_">
@@ -191,7 +187,58 @@
         <a href="https://github.com/gajendrapandeya?tab=repositories" target="_blank">
             <p class="project__repositories">Repositories on Github</p>
         </a>
+
     </section>
+
+    <!--Services Section-->
+
+    <section class="block block--light--dark services" id="services">
+        <h2 class="project__heading">Services</h2>
+        <div class="container card-container">
+
+            <div class="card--dark">
+                <img class="service__image"
+                    src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW5kcm9pZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="card__content">
+                    <p class="card__heading"> App Development</p>
+                    <p class="card__description card__description__bold">Development of professional apps including both
+                        Native Android Platform
+                        and Cross-Platform.</p>
+
+                </div>
+            </div>
+
+
+            <div class="card--dark">
+                <img class="service__image"
+                    src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aHRtbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="card__content">
+                    <p class="card__heading"> Website Creation</p>
+                    <p class="card__description card__description__bold">Development of professional webiste, web
+                        systems, blogs and online stores.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="card--dark service__card">
+                <img class="service__image"
+                    src="https://images.unsplash.com/photo-1627399270231-7d36245355a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="card__content">
+                    <p class="card__heading">Semantic Code</p>
+                    <p class="card__description card__description__bold">Strategy and monitoring for your business,
+                        making your app and website appear better and better in search.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

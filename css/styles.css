@@ -89,6 +89,12 @@ a {
     filter: invert(15%) sepia(100%) saturate(3712%) hue-rotate(255deg) brightness(85%) contrast(96%);
 }
 
+.custom-icon {
+  height: 80px;
+  fill: white;
+  text-align: center;
+}
+
 /*Buttons*/
 
 
@@ -149,6 +155,12 @@ a {
       background-color: var(--color-secondary);
     }
 
+    .card--dark {
+      border-radius: 7px;
+      /* box-shadow: 0 0 20px 10px var(--color-nav-item); */
+      background-color: var(--color-primary);
+    }
+
     .card__content {
       padding: 2rem 2rem;
     }
@@ -168,6 +180,10 @@ a {
       margin-bottom: 0;
       margin-top: 16px;
       margin-bottom: 30px;
+    }
+
+    .card__description__bold {
+      font-weight: 600;
     }
 
 /* Collapsibles */
@@ -451,7 +467,7 @@ a {
   .project__heading {
     color: white;
     font-size: 2.8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-weight: 400;
     margin-top: -2rem;
     text-align: center;
@@ -463,6 +479,11 @@ a {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--color-accent);
+    transition: color .3s;
+  }
+
+  .project__repositories:hover {
+    color: var(--color-headings);
   }
   
   @media screen and (min-width: 500px) {
@@ -473,7 +494,8 @@ a {
     }
 
     .project__heading {
-      margin-top: 1rem;
+      margin-top: -4rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -501,6 +523,20 @@ a {
 
   }
   
+
+  /*Services Section*/
+
+  .service__image {
+    width: 100%;
+    object-fit: cover;
+    height: 50%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .service__card {
+    padding-bottom: -5rem;
+  }
   
 
 
