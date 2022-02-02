@@ -5,23 +5,32 @@ collapsibles.forEach((item) =>
     })
 )
 
-function scrollTo(to, duration) {
-    if (document.body.scrollTop == to) return;
-    var diff = to - document.body.scrollTop;
-    var scrollStep = Math.PI / (duration / 10);
-    var count = 0, currPos;
-    start = element.scrollTop;
-    scrollInterval = setInterval(function () {
-        if (document.body.scrollTop != to) {
-            count = count + 1;
-            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
-            document.body.scrollTop = currPos;
-        }
-        else { clearInterval(scrollInterval); }
-    }, 10);
-}
+//Skill Bars
+let numberPercent = document.querySelectorAll('.countbar')
+let getPercent = Array.from(numberPercent)
 
-function test(elID) {
-    var dest = document.getElementById(elID);
-    scrollTo(dest.offsetTop, 500);
-}
+getPercent.map((items) => {
+    let startCount = 0
+    let progressBar = () => {
+        startCount++
+        items.innerHTML = `<h3>${startCount}%</h3>`
+        items.style.width = `${startCount}%`
+        if (startCount == items.dataset.percentnumber) {
+            clearInterval(stop)
+        }
+    }
+    let stop = setInterval(() => {
+        progressBar()
+    }, 25)
+})
+
+//Jump to top
+const jumpToTop = document.querySelector('.jump-to-top')
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 100) {
+        jumpToTop.classList.add('active')
+
+    } else {
+        jumpToTop.classList.remove('active')
+    }
+})

@@ -9,7 +9,8 @@
     <meta property="og:title" content="Codermonks">
     <meta property="og:description" content="Selft taught mobile app developer, learning about web development.">
     <meta property="og:type" content="Website">
-    <meta property="og:image" content="imageurl">
+    <meta property="og:image"
+        content="https://avatars.githubusercontent.com/u/54244689?s=400&u=0a7f30b6a5e1d9b4ba4023492ab2e66e81015199&v=4">
     <meta property="og:url" content="gpandeya.com.np">
     <title>Gajendra Pandeya - Mobile App Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,21 +26,21 @@
     <!--Navigation-->
     <header>
         <nav class="nav collapsible">
-            <a class="nav__heading" href="/">
+            <a class="nav__heading" href="#hero">
                 <p>Portfolio</p>
             </a>
-            <img class="icon icon--white nav__toggler" src="/icons/menu.svg">
+            <img class="icon icon--white nav__toggler" src="/icons/menu.svg" alt="Menu Icon">
             <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="#about-me" onclick="test('about-me'); return false;">About Me</a></li>
+                <li class="nav__item"><a href="#about-me">About Me</a></li>
                 <li class="nav__item"><a href="#projects">Projects</a></li>
-                <li class="nav__item"><a href="#">Services</a></li>
-                <li class="nav__item"><a href="#">Skills</a></li>
+                <li class="nav__item"><a href="#services">Services</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Hero Section-->
-    <section class="block block--dark">
+    <section class="block block--dark hero" id="hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
                 <p class="hero__message">Hello, I'm</p>
@@ -71,7 +72,7 @@
                     android apps. Currently I'm working at Cocolabs Solutions as a mobile app developer. </p>
 
                 <div class="btn-container">
-                    <a href="https://www.linkedin.com/in/gajendra-pandeya-91704a175/" target="_" class="">
+                    <a href="https://www.linkedin.com/in/gajendra-pandeya-91704a175/" target="_blank">
                         <button class="button">
                             <span class="button__image">
                                 <ion-icon name="logo-linkedin"></ion-icon>
@@ -79,7 +80,7 @@
                             <span class="button__title">Linkedin</span>
                         </button>
                     </a>
-                    <a href="/resume/GAJENDRA PANDEYa.pdf" download class="">
+                    <a href="/resume/GAJENDRA PANDEYa.pdf" download>
                         <button class="button">
                             <span class="button__image">
                                 <ion-icon name="cloud-download-outline"></ion-icon>
@@ -106,7 +107,7 @@
                         memory
                         game
                         by choosing photos from your phone.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.codermonkeys.mymemory" target="_"
+                    <a href="https://play.google.com/store/apps/details?id=com.codermonkeys.mymemory" target="_blank"
                         class="">
                         <button class="button">
                             <span class="button__image">
@@ -125,7 +126,7 @@
                         them in physical activities. The app simply has an option to keep track of your run i.e. how
                         long users have run, how much calories users have burnt, what is the average speed of the run
                         and so on...</p>
-                    <a href="https://github.com/gajendrapandeya/Trackie" target="_">
+                    <a href="https://github.com/gajendrapandeya/Trackie" target="_blank">
                         <button class="button">
                             <span class="button__image">
                                 <ion-icon name="logo-github"></ion-icon>
@@ -152,7 +153,7 @@
                         Get the latest news and stats about the rapidly growing Covid-19 through out the world with ease
                         with the help of this app.
                     </p>
-                    <a href="https://github.com/gajendrapandeya/Covid-19" target="_">
+                    <a href="https://github.com/gajendrapandeya/Covid-19" target="_blank">
                         <button class="button">
                             <span class="button__image">
                                 <ion-icon name="logo-github"></ion-icon>
@@ -172,7 +173,7 @@
                         Room for caching. The app also have swipeTorefresh
                         functionality.
                     </p>
-                    <a href="https://github.com/gajendrapandeya/Dogs" target="_">
+                    <a href="https://github.com/gajendrapandeya/Dogs" target="_blank">
                         <button class="button">
                             <span class="button__image">
                                 <ion-icon name="logo-github"></ion-icon>
@@ -239,7 +240,76 @@
         </div>
     </section>
 
+    <!--Skills Section-->
+    <section class="block block--dark skills" id="skills">
+        <h2 class="project__heading">Skills</h2>
+        <div class="main">
+            <div class="progress">
+                <div class="title">
+                    <h3>Mobile App Development</h3>
+                </div>
+                <div class="barline">
+                    <div class="countbar" data-percentNumber="70"></div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="title">
+                    <h3>Website Creation</h3>
+                </div>
+                <div class="barline">
+                    <div class="countbar" data-percentNumber="60"></div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="title">
+                    <h3>Flutter</h3>
+                </div>
+                <div class="barline">
+                    <div class="countbar" data-percentNumber="50"></div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="title">
+                    <h3>Kotlin</h3>
+                </div>
+                <div class="barline">
+                    <div class="countbar" data-percentNumber="65"></div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="title">
+                    <h3>Java</h3>
+                </div>
+                <div class="barline">
+                    <div class="countbar" data-percentNumber="60"></div>
+                </div>
+            </div>
 
+        </div>
+
+    </section>
+
+    <!--Footer Section-->
+
+    <footer class="block block--accent footer">
+        <div class="container ">
+            <a href="https://www.linkedin.com/in/gajendra-pandeya-91704a175/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://www.github.com/gajendrapandeya/" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/pandeygazendra/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <a href="#" class="jump-to-top">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
